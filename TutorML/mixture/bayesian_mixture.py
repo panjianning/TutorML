@@ -1,0 +1,4 @@
+
+
+class BayesianGaussianMixture(BaseMixture):
+    pass
