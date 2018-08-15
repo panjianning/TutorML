@@ -1,4 +1,4 @@
-from setuptools import setup
+from distutils.core import setup
 
 setup(name = "TutorML",
     version = "0.1",
@@ -6,6 +6,5 @@ setup(name = "TutorML",
     author = "Jianning Pan",
     author_email = "panjn@mail2.sysu.edu.cn",
     packages=["TutorML","TutorML.mixture","TutorML.demo.variational_bayes",
-    "TutorML.utils"],
-    install_requires = ['numpy','scipy','sklearn'],
+    "TutorML.utils","TutorML.decomposition"],
 )
