@@ -26,8 +26,7 @@ class LFM(object):
         if self.p_init is not None and n_users != self.p_init.shape[0]:
             raise ValueError("Number of rows of X and p_init should be equal.")
         if self.q_init is not None and n_items != self.q_init.shape[0]:
-            raise ValueError("Number of columns of X should be equal to the number of \
-                rows of q_init")
+            raise ValueError("Number of columns of X should be equal to the number of rows of q_init")
             
     def _initialize_parameters(self, X):
         n_users, n_items = X.shape
