@@ -3,8 +3,8 @@ import os
 
 class LFM(object):
     def __init__(self, n_factors=5, learning_rate=1e-4, reg_lambda=1.0, 
-                 max_iter=5, print_every=1,early_stopping=10, p_init=None, 
-                 q_init=None):
+                 max_iter=5, print_every=1,early_stopping=10, round_prediction=True,
+                 p_init=None, q_init=None):
         """ Latent Fator Model: R=PQ'
             Training with Gradient Descent.
         """
@@ -65,6 +65,10 @@ class LFM(object):
             self.q = q
             
             # display some info
+            if self.round_prediction:
+                self.r = np.round(self.r)
+                mask_diff = np.round(mask_diff)
+            
             train_mse = np.sum(mask_diff**2)/np.sum(mask)
             if test_data is not None:
                 y_test_pred = self.r.ravel()[test_idx]
