@@ -13,7 +13,7 @@ A demo showing how to use Variational Bayes to learn the posterior distribution 
 
 Latent Factor Model. Gradient descent method are applied to trained the model. I test it on the movielens 100k dataset(download from [here](http://files.grouplens.org/datasets/movielens/ml-100k.zip))
 
-![LMF result](http://ok669z6cd.bkt.clouddn.com/lfm_result.png?attname=)
+![LMF result](http://ok669z6cd.bkt.clouddn.com/lfm_result_.png?attname=)
 
 ## Reference
 [1] Murphy, K. P. (2013), Machine learning : a probabilistic perspective , MIT Press .
