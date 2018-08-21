@@ -1,4 +1,7 @@
 # TutorML
+[![License](https://img.shields.io/pypi/l/Django.svg)](bsd)
+[![Language](https://img.shields.io/badge/language-python-orange.svg)](python)
+
 A machine learning library for tutorial
 
 ### [GMM](https://github.com/PanJianning/TutorML/blob/master/TutorML/mixture/gaussian_mixture.py) 
