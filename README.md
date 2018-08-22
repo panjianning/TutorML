@@ -1,6 +1,6 @@
 # TutorML
-[![License](https://img.shields.io/pypi/l/Django.svg)](bsd)
-[![Language](https://img.shields.io/badge/language-python-orange.svg)](python)
+[![License](https://img.shields.io/pypi/l/Django.svg)](LICENSE)
+[![Language](https://img.shields.io/badge/language-python-orange.svg)](README.md)
 
 A machine learning library for tutorial
 
