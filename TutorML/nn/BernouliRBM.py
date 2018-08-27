@@ -33,7 +33,8 @@ class BernouliRBM(object):
                 H = sigmoid(np.matmul(V, self.W))
                 # CD-1
                 sample_H  = sample_beurnouli(H)
-                V1 = sigmoid(np.matmul(H, self.W.T))
+#                 V1 = sigmoid(np.matmul(H, self.W.T))
+                V1 = sigmoid(np.matmul(sample_H, self.W.T))
                 sample_V1 = sample_beurnouli(V1)
                 H1 = sigmoid(np.matmul(V1, self.W))
                 # take expectation
@@ -42,6 +43,7 @@ class BernouliRBM(object):
                 v1_mean = np.mean(sample_V1, axis=0).reshape(-1,1)
                 h1_mean = np.mean(H1, axis=0).reshape(-1,1)
                 # gradient update
+#                 self.W += learning_rate/n_samples * np.matmul(V.T, H)
                 dw = np.matmul(v_mean, h_mean.T) - np.matmul(v1_mean, h1_mean.T)
                 self.W += learning_rate * dw
                 self.b += learning_rate * (v_mean - v1_mean)
