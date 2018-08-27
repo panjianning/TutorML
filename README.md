@@ -12,6 +12,10 @@ A machine learning library for tutorial
 Gaussian Mixture Model, with parameters learned by EM algotithm.
 
 ### BernouliRBM
+[code](https://github.com/PanJianning/TutorML/blob/master/TutorML/nn/BernouliRBM.py),
+[doc](https://github.com/PanJianning/TutorML/blob/master/document/RBM.pdf),
+[test](https://github.com/PanJianning/TutorML/blob/master/rbm_test.ipynb)
+
 BernouliRBM model traning with Contrasitive Divergense
 
 ### LFM
