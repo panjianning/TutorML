@@ -6,5 +6,5 @@ setup(name = "TutorML",
     author = "Jianning Pan",
     author_email = "panjn@mail2.sysu.edu.cn",
     packages=["TutorML","TutorML.mixture","TutorML.demo.variational_bayes",
-    "TutorML.utils","TutorML.decomposition"],
+    "TutorML.utils","TutorML.decomposition","TutorML.nn"],
 )
